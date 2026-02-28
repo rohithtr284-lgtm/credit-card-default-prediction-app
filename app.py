@@ -17,8 +17,8 @@ st.set_page_config(
 # =========================
 @st.cache_resource
 def load_files():
-    model = pickle.load(open("model (6).sav", "rb"))
-    scaler = pickle.load(open("scaler (6).sav", "rb"))
+    model = pickle.load(open("model.sav", "rb"))
+    scaler = pickle.load(open("scaler.sav", "rb"))
     return model, scaler
 
 model, scaler = load_files()
@@ -222,3 +222,4 @@ if st.button("Predict Default Risk"):
 # =========================
 st.markdown("---")
 st.markdown("Developed by Rohith TR | Machine Learning Project")
+
